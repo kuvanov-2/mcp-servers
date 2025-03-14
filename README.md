@@ -20,7 +20,7 @@ op signin
 
 1. リポジトリをクローン
 ```bash
-git clone https://github.com/[your-org]/mcp-servers.git ~/Documents/Cline/MCP
+git clone https://github.com/kuvanov-2/mcp-servers.git ~/Documents/Cline/MCP
 cd ~/Documents/Cline/MCP
 ```
 
