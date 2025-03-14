@@ -2,6 +2,16 @@
 
 VSCode用のJIRAおよびGitHub MCPサーバーです。1Password CLIを使用してシークレットを管理します。
 
+## clone
+
+```bash
+#http
+git clone https://github.com/kuvanov-2/mcp-servers.git ~/Documents/Cline/MCP
+
+#ssh
+git clone git@github.com:kuvanov-2/mcp-servers.git ~/Documents/Cline/MCP
+```
+
 ## 前提条件
 
 1. 1Password CLIのインストール
