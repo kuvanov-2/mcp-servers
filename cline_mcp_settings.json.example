@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "github.com/pashpashpash/mcp-atlassian": {
+      "command": "${HOME}/Documents/Cline/MCP/mcp-atlassian/start-server.sh",
+      "cwd": "${HOME}/Documents/Cline/MCP/mcp-atlassian",
+      "env": {
+        "JIRA_URL": "https://your-domain.atlassian.net",
+        "JIRA_USERNAME": "op://vault-name/JIRA API Token/info/user",
+        "JIRA_API_TOKEN": "op://vault-name/JIRA API Token/info/access token",
+        "PYTHONPATH": "./src",
+        "PYTHONUNBUFFERED": "1",
+        "VIRTUAL_ENV": "./venv",
+        "PYTHONIOENCODING": "utf-8",
+        "LANG": "ja_JP.UTF-8",
+        "LC_ALL": "ja_JP.UTF-8"
+      },
+      "autoApprove": [
+        "jira_get_issue",
+        "jira_search"
+      ]
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/github": {
+      "command": "${HOME}/Documents/Cline/MCP/github-server/start-server.sh",
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "op://vault-name/GitHub PAT for MCP Server/info/access token"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_file_contents",
+        "get_issue"
+      ]
+    }
+  }
+}
